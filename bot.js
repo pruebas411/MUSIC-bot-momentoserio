@@ -123,7 +123,7 @@ if(config.mongodbURL || process.env.MONGO){
 
 const express = require("express");
 const app = express();
-const port = 1000;
+const port = 8080;
 app.get('/', (req, res) => {
   const imagePath = path.join(__dirname, 'index.html');
   res.sendFile(imagePath);
